@@ -26,6 +26,10 @@
   list-style: none;
 }
 
+.header__link-active {
+  text-decoration: none;
+}
+
 .header__logo {
   display: block;
   width: 148px;
@@ -262,6 +266,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+  line-height: 24px;
 }
 
 .about__logo {
@@ -286,6 +291,7 @@
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
+  line-height: 46.96px;
 }
 
 .about__text {
@@ -293,6 +299,11 @@
   font-weight: normal;
   font-size: 20px;
   letter-spacing: 0.1px;
+  line-height: 24px;
+}
+
+.about__text-letter-spacing {
+  letter-spacing: 0;
 }
 
 

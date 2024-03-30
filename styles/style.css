@@ -58,11 +58,11 @@
 
 .cover {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   width: auto;
-  height: 757px;
+  min-height: 757px;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   background-image: url(../images/cover.jpg);
@@ -198,27 +198,21 @@
   color: rgba(255, 255, 255, 1);
   font-weight: normal;
   font-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%;
 }
 
 
@@ -290,16 +284,16 @@
   margin-bottom: 76px;
   font-weight: bold;
   font-size: 40px;
-  text-transform: uppercase;
   line-height: 46.96px;
+  text-transform: uppercase;
 }
 
 .about__text {
   display: block;
   font-weight: normal;
   font-size: 20px;
-  letter-spacing: 0.1px;
   line-height: 24px;
+  letter-spacing: 0.1px;
 }
 
 .about__text-letter-spacing {
@@ -313,11 +307,11 @@
 .footer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 180px 50px 88px;
   font-size: 18px;
-  justify-content: space-between;
-  text-underline-position: under;
   line-height: 22px;
+  text-underline-position: under;
 }
 
 .footer__menu {
@@ -334,9 +328,9 @@
 }
 
 .footer__social-list {
-  width: 240px;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
+  width: 240px;
   list-style: none;
 }
 

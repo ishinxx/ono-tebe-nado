@@ -54,17 +54,17 @@
 
 .cover {
   position: relative;
+  z-index: -1;
   display: flex;
   flex-direction: column;
-  height: 757px;
   width: auto;
+  height: 757px;
   color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  z-index: -1;
 }
 
 
@@ -161,15 +161,15 @@
 }
 
 .lots__card-list {
-  row-gap: 25px;
-  flex-basis: auto;
-  flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
+  flex-grow: 1;
+  flex-basis: auto;
+  justify-content: space-between;
+  row-gap: 25px;
   margin-top: 27px;
   margin-bottom: 30px;
-  justify-content: space-between;
+  list-style: none;
 }
 
 .lots__card-list-item {
@@ -189,11 +189,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
   color: rgba(255, 255, 255, 1);
   font-weight: normal;
   font-size: 20px;
-  justify-content: space-between;
 }
 
 .card_type_film {
@@ -219,28 +219,78 @@
 
 
 .card__title {
-  margin: 51px 40px auto;
+  z-index: 0;
   display: block;
+  margin: 51px 40px auto;
   font-weight: bold;
   font-size: 22px;
   text-decoration: underline;
-  text-transform: uppercase;
-  z-index: 0;
   text-decoration-thickness: 1px;
   text-underline-position: under;
+  text-transform: uppercase;
 }
 
 .card__text {
-  margin: auto 40px 48px;;
+  z-index: 0;;
   display: block;
-  z-index: 0;
+  margin: auto 40px 48px;
 }
 
 .lots__look-more-link {
+  margin-left: 40px;
   color: rgba(0, 0, 0, 1);
   font-weight: 400;
   font-size: 20px;
-  margin-left: 40px;
-  text-underline-position: under;
   text-decoration-thickness: 1px;
+  text-underline-position: under;
+}
+
+
+/* ABOUT */
+
+
+.about {
+  display: grid;
+  grid-template-columns: 334px auto;
+  justify-items: center;
+  column-gap: 24px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.about__logo {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  margin-top: 37px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+  margin: auto;
+}
+
+.about__title {
+  display: block;
+  margin-top: 137px;
+  margin-bottom: 76px;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.1px;
 }
